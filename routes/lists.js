@@ -21,8 +21,6 @@ router
 router
     .get("/newlist",isLoggedIn,listsController.renderNewForm)
     
-router
-    .get("/mountains",(listsController.showMountainsPlace));
 
 // show listing details, updatelist, deleteList
 router
