@@ -40,8 +40,8 @@ app.use(express.static(path.join(__dirname,"/public")));
 app.use(cookieParser("secretCode")); // secretCode is unquie
 const flash=require("connect-flash");
 
-// const dbUrl=process.env.ATLASDB_URL;
-const dbUrl="mongodb://127.0.0.1:27017/advanture";
+const dbUrl=process.env.ATLASDB_URL;
+
 
 async function main(){
     await mongoose.connect(dbUrl);
