@@ -12,8 +12,12 @@
       <img src="<%=targetData.image.url%>" class="card-img-top detail-section-img" alt="...">
 
       <div class="card-body ">
-        <p class="card-text">Owned by
+        <p class="card-text">
+            <% if(targetData.owner){%>
+              Owned by
             <%=targetData.owner.username%>
+
+<%}%>
           </p>
         <p class="card-text mt-3">
 
